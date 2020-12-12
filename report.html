@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Jekyll v4.1.1">
+  <title>Dashboard Template · Bootstrap</title>
+
+  <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/dashboard/">
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+  </style>
+  <!-- Custom styles for this template -->
+  <link href="dashboard.css" rel="stylesheet">
+</head>
+
+<body>
+  <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
+    <a class="navbar-brand col-md-3 col-lg-2 mr-0 px-3" href="#">Company name</a>
+    <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-toggle="collapse"
+      data-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search">
+    <ul class="navbar-nav px-3">
+      <li class="nav-item text-nowrap">
+        <a class="nav-link" href="#">Sign out</a>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="container-fluid">
+    <div class="row">
+      <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+        <div class="sidebar-sticky pt-3">
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link " href="index.html">
+                <span data-feather="home"></span>
+                Dashboard
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="order.html">
+                <span data-feather="file"></span>
+                Orders
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="product.html">
+                <span data-feather="shopping-cart"></span>
+                Products
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="customer.html">
+                <span data-feather="users"></span>
+                Customers
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="admin.html">
+                <span><svg class="feather" viewBox="0 0 16 16" class="bi bi-file-person" fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                      d="M12 1H4a1 1 0 0 0-1 1v10.755S4 11 8 11s5 1.755 5 1.755V2a1 1 0 0 0-1-1zM4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4z" />
+                    <path fill-rule="evenodd" d="M8 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                  </svg>
+                </span>
+                Admin
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="report.html">
+                <span><svg class="feather" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path fill-rule="evenodd"
+                      d="M3.25 4a.25.25 0 00-.25.25v12.5c0 .138.112.25.25.25h2.5a.75.75 0 01.75.75v3.19l3.427-3.427A1.75 1.75 0 0111.164 17h9.586a.25.25 0 00.25-.25V4.25a.25.25 0 00-.25-.25H3.25zm-1.75.25c0-.966.784-1.75 1.75-1.75h17.5c.966 0 1.75.784 1.75 1.75v12.5a1.75 1.75 0 01-1.75 1.75h-9.586a.25.25 0 00-.177.073l-3.5 3.5A1.457 1.457 0 015 21.043V18.5H3.25a1.75 1.75 0 01-1.75-1.75V4.25zM12 6a.75.75 0 01.75.75v4a.75.75 0 01-1.5 0v-4A.75.75 0 0112 6zm0 9a1 1 0 100-2 1 1 0 000 2z">
+                    </path>
+                  </svg>
+                </span>
+                Report
+              </a>
+            </li>
+        </div>
+      </nav>
+
+      <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
+        <div class="left">
+          <div class="left-title">
+            <span class="sale">SALE </span> <span class="sale bg-red">SUMMARY</span>
+          </div>
+          <div class="card-deck ">
+            <div class="card text-white bg-card1  mb-3">
+              <div class="card-header">Revenue Total</div>
+              <div class="card-body">
+                <h5 class="card-title">$ 75</h5>
+
+              </div>
+            </div>
+            <div class="card text-white bg-card2  mb-3">
+              <div class="card-header">Shipping Cost</div>
+              <div class="card-body">
+                <h5 class="card-title">$ 75</h5>
+              </div>
+            </div>
+            <div class="card text-white bg-card3  mb-3">
+              <div class="card-header">Total Profit</div>
+              <div class="card-body">
+                <h5 class="card-title">$ 75</h5>
+              </div>
+            </div>
+            <div class="card text-white bg-card4  mb-3">
+              <div class="card-header">Average Order Size </div>
+              <div class="card-body">
+                <h5 class="card-title">$ 75</h5>
+              </div>
+            </div>
+          </div>
+          <div class="bieudo"> 
+            sgsgd
+          </div>
+        </div>
+        <div class="right">
+          <div id="rangeMonths" class="rangeMonths">
+            <div class="range">
+              <h2>DATE RANGE</h2>
+            </div>
+            <form id="inputRangeMonths" action="">
+              <div class="strDate">
+                <h3 for="strDate"> START DATE</h3>
+                <input id="strDate" type="date" value="2020-11-01" class="form-control">
+              </div>
+              <div class="endDate">
+                <h3 for="endDate"> END DATE</h3>
+                <input id="endDate" type="date" value="2020-11-30" class="form-control">
+              </div>
+            </form>
+          </div>
+          <div class="top-product">
+            <table class="table table-sm table-report">
+              <thead>
+                <tr>
+                  <th> Product Name</th>
+                  <th> Profit</th>
+                  <th> Margin</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>sfsdfd</td>
+                  <td>fs</td>
+                  <td>fasfsafsa</td>
+                </tr>
+                <tr>
+                  <td>sfsdfd</td>
+                  <td>fs</td>
+                  <td>fasfsafsa</td>
+                </tr>
+                <tr>
+                  <td>sfsdfd</td>
+                  <td>fs</td>
+                  <td>fasfsafsa</td>
+                </tr>
+                <tr>
+                  <td>sfsdfd</td>
+                  <td>fs</td>
+                  <td>fasfsafsa</td>
+                </tr>
+                <tr>
+                  <td>sfsdfd</td>
+                  <td>fs</td>
+                  <td>fasfsafsa</td>
+                </tr>
+                <tr>
+                  <td>sfsdfd</td>
+                  <td>fs</td>
+                  <td>fasfsafsa</td>
+                </tr>
+                <tr>
+                  <td>sfsdfd</td>
+                  <td>fs</td>
+                  <td>fasfsafsa</td>
+                </tr>
+              </tbody>
+
+            </table>
+          </div>
+        </div>
+
+    </div>
+
+    </main>
+  </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')</script>
+  <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.9.0/feather.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+  <script src="dashboard.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+    integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

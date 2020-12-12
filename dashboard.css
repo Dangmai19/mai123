@@ -1,0 +1,467 @@
+
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+  }
+}
+body {
+  font-size: .875rem;
+}
+
+.feather {
+  width: 20px;
+  height: 20px;
+  vertical-align: text-bottom;
+}
+.left{
+  width: 70%;
+  float: left;
+}
+.right{
+  
+   width: 30%;
+   float: left;
+}
+.left-title{
+  margin: 10px 0 0 0;
+}
+.sale{
+  font-size: 60px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.bg-red{
+  color: red;
+}
+
+/*
+ * Sidebar
+ */
+.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100; /* Behind the navbar */
+  padding: 48px 0 0; /* Height of navbar */
+  box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+}
+
+@media (max-width: 767.98px) {
+  .sidebar {
+    top: 5rem;
+  }
+}
+
+.sidebar-sticky {
+  position: relative;
+  top: 0;
+  height: calc(100vh - 48px);
+  padding-top: .5rem;
+  overflow-x: hidden;
+  overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+}
+
+@supports ((position: -webkit-sticky) or (position: sticky)) {
+  .sidebar-sticky {
+    position: -webkit-sticky;
+    position: sticky;
+  }
+}
+
+.sidebar .nav-link {
+  font-weight: 500;
+  color: #333;
+}
+
+.sidebar .nav-link .feather {
+  margin-right: 4px;
+  color: #999;
+}
+
+
+.sidebar .nav-link:hover .feather,
+.sidebar .nav-link.active .feather {
+  color: inherit;
+}
+
+.sidebar-heading {
+  font-size: .75rem;
+  text-transform: uppercase;
+}
+
+/*
+ * Navbar
+ */
+
+.navbar-brand {
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  font-size: 1rem;
+  background-color: rgba(0, 0, 0, .25);
+  box-shadow: inset -1px 0 0 rgba(0, 0, 0, .25);
+}
+
+.navbar .navbar-toggler {
+  top: .25rem;
+  right: 1rem;
+}
+
+.navbar .form-control {
+  padding: .75rem 1rem;
+  border-width: 0;
+  border-radius: 0;
+}
+
+.form-control-dark {
+  color: #fff;
+  background-color: rgba(255, 255, 255, .1);
+  border-color: rgba(255, 255, 255, .1);
+}
+
+.form-control-dark:focus {
+  border-color: transparent;
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, .25);
+}
+
+/* CSS Button......................*/
+.btn{
+  font-size: 16px;
+  border-color: wheat;
+  float: right;
+  margin-bottom: 15px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.btn-pro{
+  width: 160px;
+  height: 50px;
+  line-height: 1.5;
+  border-radius: 30px 5px 30px 5px;
+}
+
+
+/* CSS TABLE .....................................*/
+.table-responsive{
+  padding-top: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 16px;
+  text-align: center;
+  
+}
+.table-responsive tbody tr:nth-child(even) {
+  background-color: #dadce9;
+}
+
+.table-responsive td{
+  color: #0a0a0a;
+  border-left: 1px solid rgb(206, 195, 183);
+  border-bottom: 1px solid rgb(206, 195, 183);
+}
+.tbt-left{
+  border-top-left-radius: 10px;
+  border-top: none;
+}
+.tbt-right{
+  border-top-right-radius: 10px;
+  border: none;
+}
+
+/* Table TOP FORM PRODUCT ..................*/
+.table-report{
+    float: right;
+    width: 370px;
+    color: #212529; 
+    box-shadow: 0px 14px 20px -5px rgba(4, 26, 90, 0.340773);
+    padding-top: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+.table-report tbody tr:nth-child(even) {
+  background-color: #dadce9;
+}
+.table-report th{
+  background-color: rgba(22, 22, 20, 0.911);
+  color: rgb(248, 248, 248);
+  border-top: none;  
+}
+.table-report td{
+  border-left: 1px solid rgb(206, 195, 183);
+  border-bottom: 1px solid rgb(206, 195, 183);
+}
+.table-report tbody tr:hover{
+  background-color: rgb(166, 192, 241);
+}
+/* Table in Dashboard page .....................................*/
+.tbl-dash{
+  box-shadow: 0px 14px 10px -5px rgba(4, 26, 90, 0.340773);
+}
+.tbl-dash th{
+  background-color: rgba(0, 0, 0, 0.767);
+  color: white;
+  border-top: none;
+
+}
+.tbl-dash tbody tr:hover{
+  background-color:  rgb(166, 192, 241);
+}
+
+/* Table Order page ..................*/
+.tbl-order{
+  box-shadow: 0px 14px 10px -5px rgba(4, 26, 90, 0.340773);
+}
+.tbl-order th{
+  background-color: rgba(67, 70, 42, 0.911);
+  color: white;
+  border-top: none;
+
+}
+.tbl-order tbody tr:hover{
+  background-color: rgb(166, 241, 166);
+}
+
+/* Table Product page ..................*/
+.tbl-prod{
+  box-shadow: 0px 14px 10px -5px rgba(4, 26, 90, 0.340773);
+}
+.tbl-prod th{
+  background-color: rgba(22, 22, 20, 0.911);
+  color: rgb(248, 248, 248);
+  border-top: none;
+
+}
+.tbl-prod tbody tr:hover{
+  background-color: rgb(166, 192, 241);
+}
+
+/* Table Customer page ..................*/
+.tbl-cust{
+  box-shadow: 0px 14px 10px -5px rgba(4, 26, 90, 0.340773);
+}
+.tbl-cust th{
+  background-color: rgba(22, 22, 20, 0.911);
+  color: rgb(248, 248, 248);
+  border-top: none;
+
+}
+.tbl-cust tbody tr:hover{
+  background-color: rgb(166, 192, 241);
+}
+
+/* Table Admin page ..................*/
+.tbl-admin{
+  box-shadow: 0px 10px 10px -5px rgba(4, 26, 90, 0.340773);
+}
+.tbl-admin th{
+  background-color: rgba(22, 22, 20, 0.911);
+  color: rgb(248, 248, 248);
+  border-top: none;
+
+}
+.tbl-admin tbody tr:hover{
+  background-color: rgb(166, 192, 241);
+}
+
+/* CSS the card...............................*/
+.card-deck{
+  width: 95.4%;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.card-dash{
+  margin: 20px 0 0 100px;
+}
+.card{
+  max-width: 18rem;
+  border-radius: 10px;
+  box-shadow: 0px 14px 20px -5px rgba(4, 26, 90, 0.340773);
+}
+.card-title{
+  text-align: center;
+  font-size: 45px;
+  
+}
+.card-a{
+  color: #fff;
+  opacity: 0.5;
+  text-align: right;
+}
+.bg-card1{
+  background-color: #0E1731;
+}
+.bg-card2{
+  background-color:  #79af80;
+}
+.bg-card3{
+  background-color: #caa52a;
+}
+.bg-card4{
+  background-color: #bd527b;
+}
+.bg-card5{
+  background-color: rgba(208, 224, 137, 0.877);
+}
+.arrow-right{
+  width: 24px;
+  height: 24px;
+  
+}
+.main-header:before{
+  content: '';
+    position: absolute;
+    width: 60px;
+    height: 2px;
+    background-color: #10182F;
+    bottom: 0;
+}
+.main-header{
+    color: #10182F;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: 15px;
+    margin: 30px 0 15px 0;
+}
+.nav-link{
+  font-size: 25px;
+  opacity: 0.7;
+}
+.nav-item a:hover{
+  background-color: rgba(152, 235, 221, 0.973);
+}
+/* CSS SVG...........*/
+.bi-check2:hover{
+  background-color: greenyellow;
+}
+.bi-check2{
+  color: rgb(0, 255, 42); 
+  background-color: white; 
+  height: 30px; 
+  width: 30px;
+}
+.bi-x:hover{
+  background-color: rgb(221, 124, 124);
+}
+.bi-x{
+  margin-left: 15px;
+  color: rgb(255, 17, 0); 
+  background-color: white; 
+  height: 30px; 
+  width: 30px;
+}
+.bi-eye-fill:hover{
+  opacity: 0.7;
+}
+.bi-pencil-square:hover{
+  opacity: 05;
+}
+.bi-trash:hover{
+  opacity: 0.5;
+}
+
+.form-control{
+  width: 165px;
+  padding-left: 20px;
+}
+
+/* CSS Date Range............ */
+.rangeMonths{ 
+  float: right;
+  width: 370px;
+  height: 140px;
+  margin: 103px 0 0 0;
+  max-width: 400px;
+  box-shadow: 0px 14px 20px -5px rgba(4, 26, 90, 0.340773);
+}
+.rangeMonths .range{ 
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+.strDate{
+  margin-left: 10px;
+  float: left;
+}
+.strDate h3{
+  font-size: 20px;
+}
+.endDate{
+  margin-left: 15px;
+  float: left;
+}
+.endDate h3{
+  
+  font-size: 20px;
+}
+.top-product{
+  margin-top: 270px;
+}
+
+
+/* CSS Modal ....................*/
+.input-group-text{
+  width: 112px;
+}
+.modal-left-content{
+  width: 45%;
+  height: 300px;
+  margin-bottom: 20px;
+  float: left;
+}
+.modal-right-content{
+  width: 55%;
+  float: left;
+  padding-bottom: 20px;
+}
+.custom-img{
+  width: 90%;
+  height:100% ;
+  
+}
+img{
+  box-shadow: 0px 14px 10px -5px rgba(4, 26, 90, 0.340773);
+}
+.mod-table{
+  text-align: center;
+  box-shadow: 0px 14px 10px -5px rgba(4, 26, 90, 0.340773);
+}
+.mod-table tbody td{
+  border-left: 1px solid rgb(206, 195, 183);
+}
+.mod-table thead{
+  background-color: rgba(60, 46, 190, 0.911);
+  color: white;
+  border-top: none;
+
+}
+.mod-table tbody tr:hover{
+  background-color: rgb(85, 233, 97) ;
+}
+.mod-table tbody tr:nth-child(even) {
+  background-color: #dadce9;
+}
+.modal-footer{
+  padding-right: 345px;
+}
+.modal-body .delete{
+  text-align: center;
+}
+
+
+/*
+*
+*/
+.bieudo{
+  margin-left: 0.4%;
+  background: red;
+  width: 91.2%;
+  height: 400px;
+  box-shadow: 0px 14px 20px -5px rgba(4, 26, 90, 0.340773);
+}
